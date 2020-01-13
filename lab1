@@ -1,0 +1,34 @@
+1. Read the given MP3 file and get the samples and sampling frequency using command [y fs] =
+audioread(f ilename);.
+i. Plot for 2 sec with respect to the sampling frequency (fs).
+ii. Convert the samples in vector (y) to matrix (Y ) by using command reshape();
+iii. Convert the following in to the wav file using command
+audiowrite(f ilename, desired samples, sampling frequency);
+iv. Play audio by using sound(variable, samplingfrequency);
+2. Read the image given using I = imread(f ilename) command.
+i. Separate Red, Green and Blue pallets from the image and show them using imshow(variable);
+ii. Convert the color image to gray scale image and observe the difference between the pallets and
+gray scale image.
+iii. Convert the image samples from matrix in to vectors using reshape();
+iv. Resize your image in to your intended dimensions using imresize();
+3. Read the given MP4 video file using V = videoreader(f ilename);
+i. Calculate the number of frames received in the variable.
+ii. Collect the frames up to 2 sec duration and convert them back to the avi video using
+videowriter(), readF rame() and writeV ideo().
+iii. Convert the each frame in to column and store it another variable and show it as image.
+
+4. Read the passage given in the excel sheet using [numstr] = xlsread(f ilename) and convert it in
+to the ASCII values using char() and double(). Now by reordering array of ASCII values in to
+matrix of your dimensions and convert in to image.
+5. Convert the audio samples of first 3 sec extracted in 1 (a) to the ASCII values using num2str(),
+char() and double(). Finally reshape the array of ASCII values and convert it to image.
+6. Take the 2 sec audio samples and compute the floor, ceil and round and find the error between
+the original 2sec audio samples and resultant samples of floor, ceil and round.
+7. Perform the block convolution:
+i. Read the audio signal (‘Signal P rocessing Audio.mp3’).
+ii. Extract the signal for 5 sec duration (estimate the length of the sequence) and considered it as
+x(n).
+iii. Now, Calculate the outputs for the given impulse responses h1(n), h2(n) of length 61 each
+
+(stored in .mat files h1, h2) using Overlap-add method (Divide the input signal x(n) into mul-
+tiple blocks with each size of 512).
